@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sumangala Media Unit | Official Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-area">
+            <div class="logo-text">
+                <h1>ශ්‍රී සුමංගල මාධ්‍ය ඒකකය</h1>
+                <p>SRI SUMANGALA MEDIA UNIT</p>
+            </div>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="#" onclick="showPage('home')" class="nav-link active">මුල් පිටුව</a></li>
+                <li><a href="#" onclick="showPage('news')" class="nav-link">පුවත්</a></li>
+                <li><a href="#" onclick="showPage('photos')" class="nav-link">ඡායාරූප ඇල්බමය</a></li>
+                <li><a href="#" onclick="showPage('videos')" class="nav-link">වීඩියෝ</a></li>
+                <li><a href="#" onclick="showPage('about')" class="nav-link">අප ගැන</a></li>
+            </ul>
+        </nav>
+        <a href="#" onclick="showPage('live')" class="live-btn">
+            <span>●</span> LIVE
+        </a>
+    </header>
+
+    <!-- HOME PAGE -->
+    <div id="page-home" class="page-section">
+        <section class="hero">
+            <h2 class="sinhala">මතකයන් අනාගතයට දායාද කරන...</h2>
+            <p>ශ්‍රී සුමංගල විද්‍යාලයීය නිල මාධ්‍ය ඒකකයේ වෙබ් අඩවියට ඔබව සාදරයෙන් පිළිගනිමු.</p>
+            <a href="#" onclick="showPage('news')" class="btn-explore">වැඩිදුර බලන්න</a>
+        </section>
+
+        <section class="content-section">
+            <div class="section-title">
+                <h2 class="sinhala">නවතම වීඩියෝව</h2>
+            </div>
+            
+            <div class="featured-video">
+                <!-- Local Video Player -->
+                <video controls poster="images/video-thumb.jpg">
+                    <source src="videos/featured-video.mp4" type="video/mp4">
+                    ඔබගේ Browser එක මගින් Video Play කිරීම සපයන්නේ නැත.
+                </video>
+                <div class="card-body">
+                    <h3>වාර්ෂික නිවේදක පුහුණු කඳවුර 2026</h3>
+                    <p>ප්‍රවීණ මාධ්‍යවේදීන්ගේ සහභාගීත්වයෙන් පැවැත්වූ විශේෂ වැඩමුළුවේ සම්පූර්ණ වීඩියෝව.</p>
+                </div>
+            </div>
+
+            <div class="section-title">
+                <h2 class="sinhala">නවතම පුවත් (Latest Updates)</h2>
+            </div>
+            <div class="grid">
+                <a href="#" onclick="showPage('news')" class="card">
+                    <img src="images/news1.jpg" alt="News 1">
+                    <div class="card-body">
+                        <h3>වාර්ෂික නිවේදක පුහුණු කඳවුර 2026</h3>
+                        <p>ප්‍රවීණ මාධ්‍යවේදීන්ගේ සහභාගීත්වයෙන් පැවැත්වූ විශේෂ වැඩමුළුව...</p>
+                    </div>
+                </a>
+                <a href="#" onclick="showPage('news')" class="card">
+                    <img src="images/news2.jpg" alt="News 2">
+                    <div class="card-body">
+                        <h3>නිදහස් දින උත්සවය සජීවී විකාශය</h3>
+                        <p>විද්‍යාලයීය ක්‍රීඩාංගණයේ සිට ගෙන ආ සජීවී විකාශනයේ මතකයන්.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- PHOTOS ALBUM PAGE -->
+    <div id="page-photos" class="page-section" style="display: none;">
+        <div class="page-content">
+            <a href="#" onclick="showPage('home')" class="back-btn">
+                <i class="fas fa-arrow-left"></i> මුල් පිටුවට ආපසු
+            </a>
+            <h1 class="page-title sinhala">ඡායාරූප ඇල්බමය</h1>
+            
+            <div class="album-grid">
+                <!-- Photo Item 1 -->
+                <div class="album-card">
+                    <img src="images/photo1.jpg" alt="Photo 1">
+                    <div class="album-info">
+                        <h3>නිවේදක පුහුණු කඳවුර</h3>
+                        <p>2026 මාර්තු 15</p>
+                    </div>
+                </div>
+
+                <!-- Photo Item 2 -->
+                <div class="album-card">
+                    <img src="images/photo2.jpg" alt="Photo 2">
+                    <div class="album-info">
+                        <h3>නිදහස් දින සැමරුම</h3>
+                        <p>2026 පෙබරවාරි 04</p>
+                    </div>
+                </div>
+
+                <!-- Photo Item 3 -->
+                <div class="album-card">
+                    <img src="images/photo3.jpg" alt="Photo 3">
+                    <div class="album-info">
+                        <h3>වාර්ෂික ඡායාරූප ප්‍රදර්ශනය</h3>
+                        <p>2026 ජනවාරි 20</p>
+                    </div>
+                </div>
+
+                <!-- Photo Item 4 -->
+                <div class="album-card">
+                    <img src="images/photo4.jpg" alt="Photo 4">
+                    <div class="album-info">
+                        <h3>ක්‍රීඩා උත්සවය</h3>
+                        <p>2026 ජනවාරි 10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIDEOS PAGE -->
+    <div id="page-videos" class="page-section" style="display: none;">
+        <div class="page-content">
+            <a href="#" onclick="showPage('home')" class="back-btn">
+                <i class="fas fa-arrow-left"></i> මුල් පිටුවට ආපසු
+            </a>
+            <h1 class="page-title sinhala">වීඩියෝ එකතුව</h1>
+            
+            <div class="video-grid">
+                <!-- Local Video 1 -->
+                <div class="video-card">
+                    <video controls poster="images/thumb1.jpg">
+                        <source src="videos/video1.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h3>ගුරු අභිවන්දනා උත්සවය</h3>
+                        <p>කාලය: 06:46</p>
+                    </div>
+                </div>
+
+                <!-- Local Video 2 -->
+                <div class="video-card">
+                    <video controls poster="images/thumb2.jpg">
+                        <source src="videos/video2.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h3>ලෝක ළමා දින සැමරුම</h3>
+                        <p>කාලය: 09:40</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="page-about" class="page-section" style="display: none;">
+        <div class="page-content">
+            <a href="#" onclick="showPage('home')" class="back-btn">
+                <i class="fas fa-arrow-left"></i> මුල් පිටුවට ආපසු
+            </a>
+            <h1 class="page-title sinhala">අප ගැන</h1>
+            <p>ශ්‍රී සුමංගල විද්‍යාලයීය මාධ්‍ය ඒකකය යනු පාසල් මාධ්‍ය ක්ෂේත්‍රයේ ප්‍රමුඛතම ස්ථානයක් හිමිකරගෙන සිටින සංගමයකි.</p>
+        </div>
+    </div>
+
+    <!-- LIVE STREAM PAGE -->
+    <div id="page-live" class="page-section" style="display: none;">
+        <div class="page-content">
+            <a href="#" onclick="showPage('home')" class="back-btn">
+                <i class="fas fa-arrow-left"></i> මුල් පිටුවට ආපසු
+            </a>
+            <h1 class="page-title sinhala">සජීවී විකාශය (Live Stream)</h1>
+            <div class="live-player">
+                <p>මේ මොහොතේ සජීවී විකාශනයක් නොමැත.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sri Sumangala Media Unit. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
